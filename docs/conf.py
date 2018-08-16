@@ -173,3 +173,6 @@ def setup(app):
     app.connect('autodoc-skip-member', skip_internal)
     app.connect('autodoc-process-docstring', cut_module_meta)
     app.add_role('gh', github_link)
+
+locale_dirs = ['locale/']
+gettext_compact = False
